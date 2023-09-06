@@ -1,0 +1,66 @@
+/*
+
+Display
+    Nos sirve para controlar cómo se muestra un elemento dentro de nuestro documento.
+
+    Esta propuedad es distinta de position porque display se encarga de definir como se muestran u ocultan elementos (NO SE ELIMINA DEL CÓDIGO).
+
+        - none
+        - inline
+        - block 
+        - inline-block
+
+*/
+
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#articuloUno{
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    transition: all .2s ease-in 0s;
+}
+
+#articuloDos{
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    transition: all .2s ease-in 0s;
+    display: none;
+}
+
+#articuloTres{
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    transition: all .2s ease-in 0s;
+}
+
+#articuloUno:hover, #articuloDos:hover, #articuloTres:hover{
+    background-color: rgb(225, 239, 250);
+}
+
+/* 
+
+    None
+        Hace que el elemento se oculte completamente, y que no ocupe espacio en la página (no se elimina), y este valor se utiliza comunmente para ocultar elementos debido a la interacción con la ventana del navegador 
+            
+        Ej. Un menú que se oculte cuando la ventana se haga pequeña
+
+    Inline
+        Es un valor por defecto, hace que el elemento se muestre en línea con el texto que lo rodea.
+        Poner todos los elementos en una sola línea.
+
+*/
+
+li{
+    display: inline;
+    margin: 30px;
+    border: 3px dotted lightblue;
+}

@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(255, 247, 247);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Estilo a todos los contenedores */
+.contenedoresProductos {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Estilo a un producto en individual */
+.productos{
+    border: 3px dotted rgb(255, 229, 239);
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    transition: all .4s ease-in-out 0s;
+    
+}
+
+.productos:hover{
+    background-color:lavenderblush;
+    /* transition: all .4s ease-in-out 0s; */
+}
+
+/* Estilos para título */
+#titulo{
+    position: sticky;
+    top: 10px;
+    background-color:thistle;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#botonInicio{
+    /* position: absolute; */
+    left: 400px;
+    background-color: rgb(255, 219, 225);
+    border: solid 8px rgb(255, 219, 225);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 
+VALOR POSITION
+
+EN CSS, la propiedad de position nos sirve para controlar la posición de un elemento en una página web, y oma como condeisración su posición dentro del documento y como se interpreta en el flujo de trabajo. (De arriba a abajo, y de izquierda a derecha) 
+
+Valores que trabajan con position
+
+Static
+        Es el valor por defecto que ponemos en todos nuestros elementos en el documento. Respeta el flujo normal de la página, es decir, se posiciona en el lugar que le corresponde (conforme se lee el documento), no se puede modificar con valores de marge en top, bottom, right and left.
+
+        Caso de uso: resumen de compras de un carrito de compras.
+
+Relative
+        Cuando usamos este valor, vamos a posicionar un elemento respecto al flujo normal de trabajo (arriba/abajo, izqueirda a derecha). Se puede decir que vamos a colocar el elemento tomando  una posición desde la esquina superior izquierda del contenedor.
+
+        Podemos usar left, top y bottom para modificar la posición, con la ventaja que modificar estos valores no "rompe" el flujo normal de trabajo. Es decir, el elemento se mueve y deja el espacio vacío.
+
+        Caso de uso: un botón para ver el detalle del producto, que podemos mover a nuestro antojo.
+
+Absolute
+        Este valor sí modifica el flujo natural del trabajo.
+        Cuando usamos el valor absoluto, hacemos que nuestro elemento no esté dentro del flujo normal del documento (quiere decir que SÍ SE MODIFICAN LOS ELEMENTOS QUE ESTÉN ALREDEDOR DEL ELEMENTO CON ABSOLUTE). Quuiere decir que si modificamos, no dejamos huecos entre elementos.
+        Se independiza, deja de tomar ciertas cualidades del elemento padre.
+
+Fixed
+        Hace que el elemento salga del flujo normal del documento, toma como referencia al viewporto tamaño de la pantalla, es decir, no le hce caso a nadie más que a la pantalla por salirse de este flujo.
+
+        Independientemente de si hacemos scroll o no, incluso el tamaño de la pantalla, el botón se queda fijo.
+
+Sticky
+        Cuando usamos un elemento con esa propiedad, primero se comporta como un relativo (respeta el flujo del documento, no se mete con nadie, sigue las reglas), cuando ocurre una situación especial (tamño en  pixeles) cambia su comportamiento y se comportará como un fixed.
+
+        Caso: uso de barras de navegación o menú.
+
+*/
